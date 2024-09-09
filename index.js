@@ -34,7 +34,7 @@ app.post("/", async(req, res) => {
         });
         
     } catch (error) {
-       console.log(error);
+       res.send(`Error when creating table $error`);
         
     }
 });
